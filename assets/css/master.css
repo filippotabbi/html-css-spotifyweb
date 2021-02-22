@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* UTILITY */
+.margin-20{
+  margin-top: 20px;
+}
+/* STYLE BIG TAG */
+header{
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  height: 100px;
+  background-color: #080b12;
+
+}
+aside{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+  float: left;
+}
+div[role="app-content"]{
+  padding: 40px;
+  width: calc(100% - 250px);
+  margin-bottom: 100px;
+  float: left;
+  background-color: #141922;
+  color: #FFF;
+  overflow-x: auto;
+  margin-left: 250px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #282828;
+}
+/* END BIG TAG */
+/* HEADER STYLE */
+/* END HEADER */
+/* ASIDE STYLE */
+.logo{
+  width: 150px;
+
+}
+/* END ASIDE */
+/* APP-CONTENT STYLE */
+.recently-played{
+
+}
+.card{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+
+}
+h4{
+  padding: 5px 0 0 0;
+}
+.subtitle-card{
+  color: grey;
+  font-size: 13px;
+}
+/* END APP-CONTENT  */
