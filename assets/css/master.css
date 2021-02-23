@@ -7,14 +7,16 @@
 .margin-20{
   margin-top: 20px;
 }
+h1{
+  font-size: 30px;
+  padding: 5px;
+}
 /* STYLE BIG TAG */
 header{
-  width: calc(100% - 250px);
-  margin-left: 250px;
-  height: 100px;
-  background-color: #080b12;
-
-}
+max-width: calc(100vw - 250px);
+  margin-left: auto;
+  height: 120px;
+  }
 aside{
   position: fixed;
   top: 0;
@@ -24,6 +26,7 @@ aside{
   background-color: rgb(0, 0, 0);
   display: inline-block;
   float: left;
+  font-size: 16px;
 }
 div[role="app-content"]{
   padding: 40px;
@@ -40,27 +43,115 @@ footer{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: #282828;
 }
 /* END BIG TAG */
 /* HEADER STYLE */
+.btn-upgrade{
+  border: 1px solid white;
+  color: #FFF;
+  float: right;
+  padding: 5px 25px 5px 25px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.btn-upgrade:hover{
+  color: #FFF;
+  transform: scale(1.2);
+  text-decoration:none;
+
+}
+.top-nav{
+  background-color: #080b12;
+  padding: 30px;
+  overflow-x: hidden;
+}
+.selection{
+  background-color: #141922;
+  padding: 40px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  overflow-x: auto;
+}
+.col-lg-2>a {
+  color: #5a5a5a;
+}
 /* END HEADER */
 /* ASIDE STYLE */
 .logo{
   width: 150px;
+  padding-bottom: 5px;
+}
+.container-aside{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px 10px 30px;
+}
+.account{
+margin-top: 30px;
 
+}
+.hr-account{
+  width: 90%;
+  height: 1px;
+  background-color: lightgrey;
+  margin: 3px;
+}
+.fa-download{
+  padding: 5px;
+}
+.fa-user-circle{
+  padding: 5px;
+}
+.title-playlist{
+  color: #FFF;
+  padding: 5px;
+}
+.font-13{
+  font-size: 13px;
+  padding: 5px;
+}
+.fa-home{
+  color: lightgrey;
+  font-size: 22px;
+  margin: 10px;
+}
+.border-left{
+  border-left: 2px solid yellow;
+}
+.fa-search{
+  color: lightgrey;
+  font-size: 22px;
+    padding: 10px;
+}
+.fa-book-open{
+  color: lightgrey;
+  font-size: 22px;
+    padding: 10px;
+}
+.fa-plus-square{
+  color: lightgrey;
+  font-size: 22px;
+    padding: 10px;
 }
 /* END ASIDE */
 /* APP-CONTENT STYLE */
-.recently-played{
+/* .recently-played{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+} */
 
-}
 .card{
-  width: 150px;
-  height: 150px;
-  display: inline-block;
-
+  width: 150px;;
+  margin: 5px;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
 }
 h4{
   padding: 5px 0 0 0;
@@ -70,3 +161,126 @@ h4{
   font-size: 13px;
 }
 /* END APP-CONTENT  */
+/* FOOTER */
+footer{
+
+}
+.container-footer{
+  width: 100%;
+}
+.fot-nav-left{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+
+}
+.text-fot{
+  padding: 10px;
+  align-self: center;
+}
+h5{
+  color: #FFF;
+
+}
+.sub-title{
+color: lightgrey;
+}
+.mini-card{
+  width: 100px;
+}
+.fa-heart{
+  font-size: 25px;
+  padding: 10px;
+  align-self: center;
+  color: lightgrey;
+}
+.fa-folder{
+  font-size: 25px;
+  padding: 10px;
+  align-self: center;
+  color: lightgrey;
+}
+.fot-nav-c{
+  padding-top: 10px;
+}
+.fa-random{
+  font-size: 25px;
+  color:#FFF;
+  padding: 15px;
+}
+.fa-step-backward{
+  font-size: 25px;
+  color:#FFF;
+    padding: 15px;
+}
+.fa-play-circle{
+  font-size: 30px;
+  color:#FFF;
+    padding: 15px;
+}
+.fa-step-forward{
+  font-size: 25px;
+  color:#FFF;
+    padding: 15px;
+}
+.fa-undo{
+  font-size: 24px;
+  color:#FFF;
+  padding: 15px;
+}
+.time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.n-time{
+  display: flex;
+  color: #FFF;
+}
+.bar-time{
+  width: 70%;
+  height: 3px;
+  background-color: grey;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.listened{
+  width: 30%;
+  height: 3px;
+  background-color: lightgrey;
+}
+.fot-nav-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.fa-list{
+  font-size: 22px;
+  color:#FFF;
+  padding: 10px;
+}
+.fa-tv{
+  font-size: 22px;
+  color:#FFF;
+  padding: 10px;
+
+}
+.fa-volume-up{
+  font-size: 22px;
+  color:#FFF;
+  padding: 10px;
+
+}
+.bar-time-right{
+  width: 40%;
+  height: 3px;
+  background-color: grey;
+  display: inline-block;
+  vertical-align: middle;
+}
