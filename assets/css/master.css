@@ -7,10 +7,34 @@
 .margin-20{
   margin-top: 20px;
 }
+.margin-l-50{
+  margin-left: 10px;
+}
 h1{
   font-size: 30px;
   padding: 5px;
 }
+.hover-white:hover{
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  cursor: pointer;
+  }
+a{
+  color: grey;
+  list-style: none;
+  font-weight: bold;
+}
+a:hover{
+text-decoration: none;
+}
+.hover-green:hover{
+  background-color: green;
+  height: 10px;
+  align-self: center;
+ border-radius: 3px;
+ border: 1px solid grey;
+}
+
 /* STYLE BIG TAG */
 header{
 max-width: calc(100vw - 250px);
@@ -21,7 +45,7 @@ aside{
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 260px;
   height: 100vh;
   background-color: rgb(0, 0, 0);
   display: inline-block;
@@ -29,7 +53,7 @@ aside{
   font-size: 16px;
 }
 div[role="app-content"]{
-  padding: 40px;
+  padding: 80px;
   width: calc(100% - 250px);
   margin-bottom: 100px;
   float: left;
@@ -43,7 +67,7 @@ footer{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 120px;
   background-color: #282828;
 }
 /* END BIG TAG */
@@ -82,8 +106,9 @@ footer{
 /* END HEADER */
 /* ASIDE STYLE */
 .logo{
+  margin-top: 10px;
   width: 150px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .container-aside{
   display: flex;
@@ -114,6 +139,9 @@ margin-top: 30px;
   font-size: 13px;
   padding: 5px;
 }
+.font-13:hover{
+  padding-left: 30px;
+}
 .fa-home{
   color: lightgrey;
   font-size: 22px;
@@ -126,6 +154,7 @@ margin-top: 30px;
   color: lightgrey;
   font-size: 22px;
     padding: 10px;
+    justify-content: center;
 }
 .fa-book-open{
   color: lightgrey;
@@ -137,6 +166,12 @@ margin-top: 30px;
   font-size: 22px;
     padding: 10px;
 }
+i[class^="fas"]:hover{
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  cursor: pointer;
+}
+
 /* END ASIDE */
 /* APP-CONTENT STYLE */
 /* .recently-played{
@@ -162,9 +197,7 @@ h4{
 }
 /* END APP-CONTENT  */
 /* FOOTER */
-footer{
 
-}
 .container-footer{
   width: 100%;
 }
@@ -252,6 +285,7 @@ color: lightgrey;
   height: 3px;
   background-color: lightgrey;
 }
+
 .fot-nav-right{
   display: flex;
   flex-direction: row;
@@ -283,4 +317,8 @@ color: lightgrey;
   background-color: grey;
   display: inline-block;
   vertical-align: middle;
+}
+
+
+
 }
