@@ -10,6 +10,9 @@
 .margin-l-50{
   margin-left: 10px;
 }
+.padding-top{
+  padding-top: 0;
+}
 .slidecontainer {
   width: 100%; /* Width of the outside container */
   display: flex;
@@ -198,6 +201,11 @@ footer{
   margin-top: 10px;
   width: 150px;
   padding-bottom: 10px;
+}
+.logo-min{
+  display: none;
+  width: 60px;
+  background-color: black;
 }
 .container-aside{
   display: flex;
@@ -442,9 +450,26 @@ color: lightgrey;
 .card{
   width: 130px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+}
+.logo{
+  display: none;
+
+}
+.padding-top{
+  padding-top: 25px;
+  display: block;
+}
+.logo-min{
+  width: 34px;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+.overflow-hidden{
+  width: 40px;
 }
 .col-xs-6{
   width: 40%;
@@ -461,11 +486,9 @@ color: lightgrey;
   align-self: center;
   margin-left: -5px;
 }
-main{
-  overflow-x: hidden;
-}
+
 img.poster{
-    width: 110px;
+    width: 150px;
   }
 h1{
   font-size: 16px;
@@ -543,7 +566,7 @@ aside{
   background-color: #141922;
   color: #FFF;
   padding: 30px;
-  margin-left: auto;
+  margin-left: 40px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
@@ -566,12 +589,12 @@ img.mini-card{
   width: 50px;
   height: 50px;
 }
-h5{
-  font-size: 8px;
+h4{
+  font-size: 14px;
 
 }
 .sub-title{
-  font-size: 8px;
+  font-size: 10px;
   padding: 0px;
 }
 .fa-heart,.fa-folder,.fa-random,.fa-step-backward,.fa-play-circle,.fa-step-forward,.fa-undo,.fa-list,.fa-tv,.fa-volume-up{
@@ -593,6 +616,8 @@ h5{
 }
 .fot-nav-c{
   padding-right: 8px;
+  position: relative;
+  left: 5px;
 }
 .fot-nav-left {
     display: flex;
@@ -606,7 +631,7 @@ footer{
 }
 
 /* Medium devices (tablet, 768px and up) */
-@media all and ( min-width: 769px) and ( max-width: 992px) {
+@media all and ( min-width: 769px) and ( max-width: 996px) {
 img.poster{
     width: 120px;
   }
@@ -624,7 +649,12 @@ img.poster{
     margin-left: auto;
 
 }
+.time {
 
+}
+.bar-time{
+  height: 3px;
+}
   .btn-upgrade{
     margin-right: 3%;
     border: 1px solid white;
@@ -651,10 +681,20 @@ aside{
     color: #FFF;
     margin-left: 180px;
     }
-
+.fa-random,.fa-step-backward,.fa-play-circle,.fa-step-forward,.fa-undo{
+  font-size: 15px;
+  padding-top: 15px;
+}
 .fot-nav-c{
-  display: flex;
-  flex-grow: 1.2;
+height: 100%;
+margin: 0;
+padding: 0;
+position: relative;
+top: 20px;
+left: 10px;
+}
+.fot-nav-right{
+align-items: center;
 }
 .selection{
   padding: 25px;
@@ -665,13 +705,18 @@ aside{
   justify-content: flex-start;
 
 }
-
+h4{
+  text-align: center;
+}
+.sub-title{
+  text-align: center;
+}
 
 
 }
 
-/* Large devices ( desktops, 1200px and up) */
-@media screen and (min-width:992px) and (max-width:1200px) {
+
+@media screen and (min-width:996px) and (max-width:1200px) {
   .btn-upgrade{
     border: 1px solid white;
     color: #FFF;
@@ -681,6 +726,7 @@ aside{
     font-size: 11px;
     font-weight: bold;
   }
+.
   .btn-upgrade:hover{
     color: #FFF;
     transform: scale(1.2);
@@ -699,7 +745,8 @@ aside{
 .selection{
   display: flex;
   padding: 10px;
-  justify-content:space-between;
+  align-items: center;
+  justify-content:center;
 }
 aside{
       position: fixed;
@@ -720,4 +767,61 @@ aside{
     margin-left: 220px;
 
     }
+}
+
+@media screen and (min-width:1200px) and (max-width: 1400px){
+  header{
+  width: calc(100vw);
+    height: 120px;
+    margin-left: 240px;
+    }
+  .container-aside {
+        display: flex;
+        flex-direction: column;
+         justify-content: space-around;
+         align-items: flex-start;
+         padding: 0;
+
+    }
+  aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 110vh;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+  }
+.top-nav{
+  width: calc(100vw);
+    height: 120px;
+
+
+}
+.selection{
+  width: calc(100vw);
+    height: 120px;
+
+}
+  .app-content{
+
+  width: calc(100vw);
+    padding: 70px ;
+    margin-bottom: 120px;
+    background-color: #141922;
+    color: #FFF;
+    overflow-x: hidden;
+    margin-left: 240px;
+
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #282828;
+  }
 }
